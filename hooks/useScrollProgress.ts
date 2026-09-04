@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { usePortfolioStore } from '@/lib/store';
+import { usePortfolioStore } from '@lib/store';
 
 export function useScrollProgress(elementId: string) {
   const [progress, setProgress] = useState(0);

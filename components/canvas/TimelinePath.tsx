@@ -4,7 +4,7 @@ import React, { useRef, useMemo } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 import { Html } from '@react-three/drei';
-import { usePortfolioStore } from '@/lib/store';
+import { usePortfolioStore } from '@lib/store';
 
 const EVENTS = [
   { date: 'Aug 2023', text: 'B.Tech CSE commences — MIT ADT University' },

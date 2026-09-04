@@ -3,8 +3,8 @@
 import React, { useMemo, useRef, useEffect } from 'react';
 import { useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { usePortfolioStore } from '@/lib/store';
-import { gsap } from '@/lib/gsapSetup';
+import { usePortfolioStore } from '@lib/store';
+import { gsap } from '@lib/gsapSetup';
 
 export default function HeroParticles() {
   const { isMobile } = usePortfolioStore();

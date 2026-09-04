@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { usePortfolioStore } from '@/lib/store';
+import { usePortfolioStore } from '@lib/store';
 
 export function useReducedMotion() {
   const setAnimationsDisabled = usePortfolioStore((state) => state.setAnimationsDisabled);

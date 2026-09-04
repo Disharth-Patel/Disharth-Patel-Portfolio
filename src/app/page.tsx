@@ -2,24 +2,24 @@
 
 import React, { useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import Nav from '@/components/ui/Nav';
-import HeroOverlay from '@/components/ui/HeroOverlay';
-import AboutOverlay from '@/components/ui/AboutOverlay';
-import ProjectCard from '@/components/ui/ProjectCard';
-import ContactPanel from '@/components/ui/ContactPanel';
-import SceneCanvas from '@/components/canvas/SceneCanvas';
-import { useMobileDetect } from '@/hooks/useMobileDetect';
-import { useReducedMotion } from '@/hooks/useReducedMotion';
-import { gsap } from '@/lib/gsapSetup';
+import Nav from '@components/ui/Nav';
+import HeroOverlay from '@components/ui/HeroOverlay';
+import AboutOverlay from '@components/ui/AboutOverlay';
+import ProjectCard from '@components/ui/ProjectCard';
+import ContactPanel from '@components/ui/ContactPanel';
+import SceneCanvas from '@components/canvas/SceneCanvas';
+import { useMobileDetect } from '@hooks/useMobileDetect';
+import { useReducedMotion } from '@hooks/useReducedMotion';
+import { gsap } from '@lib/gsapSetup';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Lazy load Canvas components
-const HeroParticles = dynamic(() => import('@/components/canvas/HeroParticles'), { ssr: false });
-const AboutTunnel = dynamic(() => import('@/components/canvas/AboutTunnel'), { ssr: false });
-const SkillGraph = dynamic(() => import('@/components/canvas/SkillGraph'), { ssr: false });
-const ProjectStage = dynamic(() => import('@/components/canvas/ProjectStage'), { ssr: false });
-const TimelinePath = dynamic(() => import('@/components/canvas/TimelinePath'), { ssr: false });
-const ContactVoid = dynamic(() => import('@/components/canvas/ContactVoid'), { ssr: false });
+const HeroParticles = dynamic(() => import('@components/canvas/HeroParticles'), { ssr: false });
+const AboutTunnel = dynamic(() => import('@components/canvas/AboutTunnel'), { ssr: false });
+const SkillGraph = dynamic(() => import('@components/canvas/SkillGraph'), { ssr: false });
+const ProjectStage = dynamic(() => import('@components/canvas/ProjectStage'), { ssr: false });
+const TimelinePath = dynamic(() => import('@components/canvas/TimelinePath'), { ssr: false });
+const ContactVoid = dynamic(() => import('@components/canvas/ContactVoid'), { ssr: false });
 
 const PROJECTS = [
   {
