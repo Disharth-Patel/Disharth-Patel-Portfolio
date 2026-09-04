@@ -54,6 +54,7 @@ export default function ContactVoid() {
       <bufferGeometry>
         <bufferAttribute
           attach="attributes-position"
+          args={[initialPositions, 3]}
           count={particleCount}
           array={initialPositions}
           itemSize={3}

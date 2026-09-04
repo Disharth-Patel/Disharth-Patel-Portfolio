@@ -135,6 +135,7 @@ export default function HeroParticles() {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
+            args={[initialPositions, 3]}
             count={particleCount}
             array={initialPositions}
             itemSize={3}
@@ -152,6 +153,7 @@ export default function HeroParticles() {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
+            args={[edgePositions, 3]}
             count={edgePositions.length / 3}
             array={edgePositions}
             itemSize={3}

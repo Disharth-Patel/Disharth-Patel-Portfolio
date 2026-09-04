@@ -77,6 +77,7 @@ export default function AboutTunnel() {
         <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
+            args={[new Float32Array(1000 * 3).map(() => (Math.random() - 0.5) * 20), 3]}
             count={1000}
             array={new Float32Array(1000 * 3).map(() => (Math.random() - 0.5) * 20)}
             itemSize={3}

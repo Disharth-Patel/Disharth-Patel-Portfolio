@@ -103,6 +103,10 @@ export default function SkillGraph() {
           <bufferGeometry>
             <bufferAttribute
               attach="attributes-position"
+              args={[new Float32Array([
+                nodes[i].position.x, nodes[i].position.y, nodes[i].position.z,
+                nodes[j].position.x, nodes[j].position.y, nodes[j].position.z,
+              ]), 3]}
               count={2}
               array={new Float32Array([
                 nodes[i].position.x, nodes[i].position.y, nodes[i].position.z,
